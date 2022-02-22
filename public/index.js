@@ -135,7 +135,7 @@ const sectionCenter = document.querySelector('.section-center');
         <header>
           <h4>${item.name}</h4>
           <br>
-          <ul class='traits'>
+          <ul>
           <li>${item.breed}</li>
           <li>${item.sex}</li>
           <li>${item.age}</li>
@@ -161,6 +161,7 @@ navToggle.addEventListener('click', () => {
     }
 });
 
+
 // TO DO functionality
 let todoArray = [];
 const text = document.getElementById("text");
@@ -181,44 +182,44 @@ addTaskButton.addEventListener("click", (e) => {
     text.value = "";
     localStorage.setItem("todo", JSON.stringify(todoArray));
     displayTodo();
-   });
+});
 
-   function displayTodo() {
+function displayTodo() {
     let todo = localStorage.getItem("todo");
     if (todo === null) {
-    todoArray = [];
+        todoArray = [];
     } else {
-    todoArray = JSON.parse(todo);
+        todoArray = JSON.parse(todo);
     }
     let htmlCode = "";
     todoArray.forEach((list, ind) => {
-    htmlCode += `<div class='flex mb-4 items-center'>
-    <p class='w-full text-grey-darkest'>${list}</p>
-    <button onclick='edit(${ind})' class='flex-no-shrink p-2 ml-4 mr-2 border-2 rounded text-white text-grey bg-green-600'>Edit</button>
-    <button onclick='deleteTodo(${ind})' class='flex-no-shrink p-2 ml-2 border-2 rounded text-white bg-red-500'>Delete</button>
-   </div>`;
+        htmlCode += `<div class='flex mb-4 items-center'>
+        <p class='w-full text-grey-darkest'>${list}</p>
+        <button onclick='edit(${ind})' class='flex-no-shrink p-2 ml-4 mr-2 border-2 rounded text-white text-grey bg-green-600'>Edit</button>
+        <button onclick='deleteTodo(${ind})' class='flex-no-shrink p-2 ml-2 border-2 rounded text-white bg-red-500'>Delete</button>
+        </div>`;
     });
     listBox.innerHTML = htmlCode;
-   }
+}
 
-   function deleteTodo(ind) {
+function deleteTodo(ind) {
     let todo = localStorage.getItem("todo");
     todoArray = JSON.parse(todo);
     todoArray.splice(ind, 1);
     localStorage.setItem("todo", JSON.stringify(todoArray));
     displayTodo();
-   }
+}
 
-   function edit(ind) {
+function edit(ind) {
     saveInd.value = ind;
     let todo = localStorage.getItem("todo");
     todoArray = JSON.parse(todo);
     text.value = todoArray[ind];
     addTaskButton.style.display = "none";
     saveTaskButton.style.display = "block";
-   }
+}
 
-   saveTaskButton.addEventListener("click", () => {
+saveTaskButton.addEventListener("click", () => {
     let todo = localStorage.getItem("todo");
     todoArray = JSON.parse(todo);
     let id = saveInd.value;
@@ -228,5 +229,25 @@ addTaskButton.addEventListener("click", (e) => {
     text.value = "";
     localStorage.setItem("todo", JSON.stringify(todoArray));
     displayTodo();
-   }); 
+}); 
+// Show content- ABOUT section //
+const about = document.querySelector("#about");
+const btns = document.querySelectorAll(".tab-btn");
+const articles = document.querySelectorAll(".content");
 
+about.addEventListener("click", function (e) {
+  const id = e.target.dataset.id;
+  if (id) {
+    // remove selected from other buttons
+    btns.forEach(function (btn) {
+      btn.classList.remove("active");
+    });
+    e.target.classList.add("active");
+    // hide other articles
+    articles.forEach(function (article) {
+      article.classList.remove("active");
+    });
+    const element = document.getElementById(id);
+    element.classList.add("active");
+  }
+});
