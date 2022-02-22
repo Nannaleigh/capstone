@@ -1,7 +1,7 @@
 const adoptDogs = [
     {
         id: 1,
-        img: "/images/01.jpg",
+        img: "./images/01.jpg",
         name: 'Olivia Chewton John', 
         breed:'German Shepherd',
         sex: 'Female',
@@ -11,7 +11,7 @@ const adoptDogs = [
     }, 
     {
        id: 2,
-       img: "/images/02.jpg",
+       img: "./images/02.jpg",
        name: 'Jabba the Mutt',  
        breed: 'Pit Bull Terrier',
        sex: 'Male',
@@ -21,7 +21,7 @@ const adoptDogs = [
    },
    {
        id: 3,
-       img: "/images/03.jpg", 
+       img: "./images/03.jpg", 
        name: 'Mary Puppins',
        breed: 'Border Collie' ,
        sex: 'Female',
@@ -31,7 +31,7 @@ const adoptDogs = [
    },
    {
        id: 4,
-       img: "/images/04.jpg", 
+       img: "./images/04.jpg", 
        name: 'Bilbo Waggins', 
        breed:'Australian Cattle Dog',
        sex: 'Male',
@@ -41,7 +41,7 @@ const adoptDogs = [
    },
    {
        id: 5,
-       img: "/images/05.jpg",
+       img: "./images/05.jpg",
        name: 'Sir Waggington',  
        breed: 'Labrador Retriever',
        sex:'Male' ,
@@ -51,7 +51,7 @@ const adoptDogs = [
    },
    {
        id: 6,
-       img: "/images/06.jpg",
+       img: "./images/06.jpg",
        name: 'Porkchop', 
        breed:'German Shepherd' ,
        sex:'Female' ,
@@ -61,7 +61,7 @@ const adoptDogs = [
    },
    {
        id: 7,
-       img: "/images/07.jpg", 
+       img: "./images/07.jpg", 
        name: 'Sir Licks-a-Lot', 
        breed: 'Labrador Retriever',
        sex:'Male' ,
@@ -71,7 +71,7 @@ const adoptDogs = [
    },
    {
        id: 8,
-       img: "/images/08.jpg", 
+       img: "./images/08.jpg", 
        name: 'Pup Tart',
        breed: 'Australian Shepherd' ,
        sex:'Male' ,
@@ -81,7 +81,7 @@ const adoptDogs = [
    },
    {
        id: 9,
-       img: "/images/09.jpg",
+       img: "./images/09.jpg",
        name: 'Chewbacca', 
        breed:'Labrador Retriever' ,
        sex:'Male' ,
@@ -92,7 +92,7 @@ const adoptDogs = [
   
    {
        id: 10,
-       img: "/images/10.jpg",
+       img: "./images/10.jpg",
        name: 'Joan of Bark',  
        breed: 'American Husky',
        sex: 'Female',
@@ -102,7 +102,7 @@ const adoptDogs = [
    },
    {
        id: 11,
-       img: "/images/11.jpg",
+       img: "./images/11.jpg",
        name: 'Blue',  
        breed:'Australian Cattle Dog' ,
        sex: 'Female',
@@ -112,7 +112,7 @@ const adoptDogs = [
    },
    {
        id: 12,
-       img: "/images/12.jpg", 
+       img: "./images/12.jpg", 
        name: 'Jonesy Bones',
        breed: 'Australian Cattle Dog',
        sex: 'Female',

@@ -14,7 +14,7 @@ h1, h2, h3, h4, .logo {
 font-family: 'Dela Gothic One', cursive;
 }
 
- .text, .item-text {
+ .text, .item-text, a {
     font-family: 'Patrick Hand', cursive;
     font-size: 24px;
     width: 70%;
@@ -187,7 +187,7 @@ nav {
     padding: 1rem;
   }
   .nav-toggle {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #4b3f72;
     background: transparent;
     border-color: transparent;
@@ -203,7 +203,7 @@ nav {
   }
   .links a {
     color: hsl(209, 34%, 30%);
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-transform: capitalize;
     letter-spacing: 0.1rem;
     display: block;
