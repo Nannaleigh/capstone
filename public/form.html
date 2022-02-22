@@ -14,7 +14,7 @@
     <!--title font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Sans:wght@100&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Patrick+Hand&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -42,42 +42,17 @@
         <header>
             <div class="title">
                 <h2>Welcome to the Dawg Haus</h2>
-                <p> If you are ready to welcome a new furry friend into your life, please fill out the form below and a member of our staff will contact you to complete the adoption process.</p>
+                <p> Preparing for a new furry family member can be a daunting task. Feel free to make use of our to-do list to check off the items and tasks you'll need to do to prepare for your new arrival.</p>
               </div>
         </header>
-        <main>
-        <h2>Adoption Request Form</h2>
-        <form id="profile-form">
-            <label for="dog">Name of Dog:</label>
-            <input type="text" id="dog"/>
-    
-            <label for="first-name">First Name:</label>
-            <input type="text" id="first-name"/>
-    
-            <label for="last-name">Last Name:</label>
-            <input type="text" id="last-name"/>
-    
-            <label for="phone-number">Phone Number:</label>
-            <input type="text" id="phone-number"/>
-    
-            <label for="email">Email:</label>
-            <input type="text" id="email"/>
-    
-            <label for="address">Address:</label>
-            <input type="text" id="address"/>
-    
-            <label for="city">City:</label>
-            <input type="text" id="city"/>
-    
-            <label for="state">State:</label>
-            <input type="text" id="state"/>
-    
-            <label for="zip-code">Zip Code:</label>
-            <input type="text" id="zip-code"/>
-    
-            <button>Submit</button>
-        </form>
-        </main>
+        <h3> ToDo List</h3>
+      <div class="container">
+      <input  name="text" id="text" placeholder="Add Todo" />
+      <input type="hidden" id="saveIndex" />
+      <button  id="add-task-btn">Add</button>
+      <button style="display: none" id="save-todo-btn">Edit Todo</button>
+      <div id="listBox"></div>
+      </div>
     <script src="./index.js"> </script>
 </body>
 </html>
