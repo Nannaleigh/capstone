@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawg Haus</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!--title font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Sans:wght@100&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-center">
+          <!--nav header-->
+          <div class="nav-header">
+            <img src="../images/house2.png" class="icon" alt="dog house">
+            <br>
+            <h1 class="logo">Dawg Haus</h1>
+            <button class="nav-toggle">
+              <i class="fa fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+        <ul class="links">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="adopt.html">dogs</a>
+          </li>
+        </ul>
+        </div>  
+        </nav>
+        <header>
+            <div class="title">
+                <h2>Welcome to the Dawg Haus</h2>
+                <p> If you are ready to welcome a new furry friend into your life, please fill out the form below and a member of our staff will contact you to complete the adoption process.</p>
+              </div>
+        </header>
+        <main>
+        <h2>Adoption Request Form</h2>
+        <form id="profile-form">
+            <label for="dog">Name of Dog:</label>
+            <input type="text" id="dog"/>
+    
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name"/>
+    
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name"/>
+    
+            <label for="phone-number">Phone Number:</label>
+            <input type="text" id="phone-number"/>
+    
+            <label for="email">Email:</label>
+            <input type="text" id="email"/>
+    
+            <label for="address">Address:</label>
+            <input type="text" id="address"/>
+    
+            <label for="city">City:</label>
+            <input type="text" id="city"/>
+    
+            <label for="state">State:</label>
+            <input type="text" id="state"/>
+    
+            <label for="zip-code">Zip Code:</label>
+            <input type="text" id="zip-code"/>
+    
+            <button>Submit</button>
+        </form>
+        </main>
+    <script src="./index.js"> </script>
+</body>
+</html>
