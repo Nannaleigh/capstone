@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 const path = require('path')
 const SERVER_PORT = process.env.PORT || 5464
-const { seed } = require('./seed.js')
+
 
 app.use(express.json())
 app.use(express.static('public'))
@@ -16,4 +16,3 @@ app.get('/', (req, res) => {
 
 
 app.listen(SERVER_PORT, () => console.log (`Listening to you on port ${SERVER_PORT}`))
-
