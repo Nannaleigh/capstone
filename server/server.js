@@ -1,4 +1,4 @@
-require('dotenv').config()
+
 const express = require('express')
 const app = express()
 const path = require('path')
@@ -8,7 +8,7 @@ const { seed } = require('./seed.js')
 app.use(express.json())
 app.use(express.static('public'))
 
-app.post('/seed', seed)
+// app.post('/seed', seed)
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'))
