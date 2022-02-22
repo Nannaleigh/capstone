@@ -2,7 +2,7 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 const path = require('path')
-const {SERVER_PORT} = process.env || 5464
+const SERVER_PORT = process.env.PORT || 5464
 const { seed } = require('./seed.js')
 
 app.use(express.json())

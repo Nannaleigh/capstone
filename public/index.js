@@ -251,3 +251,6 @@ about.addEventListener("click", function (e) {
     element.classList.add("active");
   }
 });
+
+displayTodo()
+alert('jsloaded')
