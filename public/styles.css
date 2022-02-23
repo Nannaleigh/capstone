@@ -129,13 +129,13 @@ About
   text-transform: capitalize;
   font-size: 1rem;
   display: block;
-  background: hsl(212, 33%, 89%);
+  background: hsl(157, 100%, 85%);
   cursor: pointer;
   transition: all 0.3s linear;
   letter-spacing: 0.25rem;
 }
 .tab-btn:hover:not(.active) {
-  background: hsl(205, 100%, 96%);
+  background: hsla(160, 80%, 86%, 0.623);
   color: #20615681;
 }
 .about-content {
@@ -176,7 +176,7 @@ Navbar
 ===============
 */
 nav {
-    background: #017e8e63;
+    background: #018e7b96;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
   .nav-header {
@@ -222,6 +222,13 @@ nav {
   }
   .show-links {
     height: 10rem;
+  }
+  .list {
+    display:block;
+    margin: left 2rem;
+  }
+  #list, #add-text-btn{
+    text-align:center ;
   }
   @media screen and (min-width: 1200px) {
     .section-center {
