@@ -5,16 +5,15 @@
   GLOBAL
   ===============
   */
-
 body {
-    background-color: #fff6ea;
-  }
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2FT1U20jG.jpg&f=1&nofb=1');
+}
 
 h1, h2, h3, h4, .logo {
 font-family: 'Dela Gothic One', cursive;
 }
 
- .text, .item-text, a {
+ .text, .item-text, a, p {
     font-family: 'Patrick Hand', cursive;
     font-size: 24px;
     width: 70%;
