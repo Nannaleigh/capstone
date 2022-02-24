@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name":"Pricilla",
+        "comment":"I love the Dawg Haus! They helped me learn how to be the best caretaker. When I met Lulu, a rescue from Dawg Haus, I knew she was the one!"
+    }, 
+    {
+        "id": 2,
+        "name":"Jorge",
+        "comment":"I adopted Buster through Dawg Haus. Simple process and friendly people."
+    }, 
+    {
+        "id": 3,
+        "name":"Christopher",
+        "comment":"I volunteer here! It is a great atmosphere and the dogs are adorable. They even have a senior spa day for the older dogs."
+    },
+    {
+        "id": 4,
+        "name":"Peter",
+        "comment":"I adopted Rufio through Dawg Haus and loved the process. They made me feel valued and taken care of."
+    }
+]

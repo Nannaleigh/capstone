@@ -1,59 +1,49 @@
 
-
 /*
   =============== 
   GLOBAL
   ===============
   */
-body {
-  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2FT1U20jG.jpg&f=1&nofb=1');
-}
-
-h1, h2, h3, h4, .logo {
-font-family: 'Dela Gothic One', cursive;
-}
-
- .text, .item-text, a, p {
-    font-family: 'Patrick Hand', cursive;
-    font-size: 24px;
-    width: 70%;
-    text-align: center;
-    margin: auto;
-}
-
-li {
-    font-family:'Patrick Hand', cursive;
-    font-size: 18px;
-}
-/* Section used for adopt.html: */
-.section-center {
-    width: 100vw;
-    margin: 0 auto;
-    max-width: 1170px;
+  body {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2FT1U20jG.jpg&f=1&nofb=1');
+  }
+  
+  h1, h2, h3, h4, .logo {
+    font-family: 'Dela Gothic One', cursive;
+  }
+  
+  #comment-container {
+    text-align: left;
     display: grid;
-    gap: 3rem 2rem;
-    justify-items: center;
+    height: auto;
+    border: #4b3f72 solid;
+    width:70%;
+    margin-left:100px;
+    padding: 50px;
   }
-  .dog-info {
+  .text, .item-text, a, p {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 26px;
+      width: 70%;
+      text-align: center;
+      margin: auto;
+    }
+    
+    li {
+      font-family:'Patrick Hand', cursive;
+      font-size: 18px;
+    }
+    ul {
+      list-style-type: none;
+  }
+  form {
     display: grid;
-    gap: 1rem 2rem;
-    max-width: 25rem;
-  }
-  .photo {
-    object-fit: cover;
-    height: 200px;
-    border: 0.25rem solid #4b3f72;
-    border-radius: 0.5rem;
-  }
-  ul {
-    list-style-type: none;
-  }
-  img {
-    display: block;
-  }
-  .title {
-    text-align: center;
-    margin-bottom: 2rem;
+    border: solid 2px ;
+    width: 500px;
+    height: 400px;
+    margin-top: 150px;
+    margin-left: 100px;
+    padding: 50px;
   }
 
   /*
@@ -62,14 +52,18 @@ li {
   ===============
   */
   .icon {
-      height: 50px;
-      justify-content: center;
-      margin: 15px;
+    height: 50px;
+    justify-content: center;
+    margin: 15px;
   }
 .logo {
     
     font-size: 2.5rem;
     color: rgba(36, 1, 36, 0.918);
+}
+.comment-header {
+  margin-left:100px;
+  margin-top: 50px;
 }
 /*
 =============== 
@@ -87,7 +81,7 @@ About
 }
 .about-img {
   border-radius: 0.5rem;
-  object-fit: cover;
+  
   height: 20rem;
   margin-bottom: 2rem;
 }
@@ -145,7 +139,7 @@ About
 }
 .btn:hover {
   color: var white;
-  background: black;
+  background: rgba(3, 102, 72, 0.609);
 }
 /* section */
 .section {
@@ -227,9 +221,9 @@ nav {
     display:block;
     margin: left 2rem;
   }
-  #list, #add-text-btn{
-    text-align:center ;
-  }
+ 
+
+  
   @media screen and (min-width: 1200px) {
     .section-center {
       width: 95vw;
@@ -274,6 +268,6 @@ nav {
       max-width: 40rem;
     }
     .photo {
-      height: 175px;
+      height: 150px;
     }
   }
