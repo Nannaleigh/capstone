@@ -11,12 +11,10 @@
   h1, h2, h3, h4, .logo {
     font-family: 'Dela Gothic One', cursive;
   }
-  
   #comment-container {
-    text-align: left;
+    align-items: flex-start;
     display: grid;
     height: auto;
-    border: #4b3f72 solid;
     width:70%;
     margin-left:100px;
     padding: 50px;

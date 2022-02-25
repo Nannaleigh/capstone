@@ -23,7 +23,10 @@
       font-family:'Patrick Hand', cursive;
       font-size: 18px;
   }
-  
+  .container {
+    margin: auto;
+    width: 30%;
+  }
   /* Section used for adopt.html: */
   .section-center {
       width: 100vw;

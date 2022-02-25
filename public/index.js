@@ -44,6 +44,7 @@ function createCommentCard(comment) {
     commentCard.innerHTML = `
     <p class="comment">${comment.name} says: "${comment.comment}"</p>
     <br>
+    <p> --------------------------------------</p>
     `
 
     commentContainer.appendChild (commentCard)
